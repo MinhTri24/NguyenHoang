@@ -12680,3 +12680,17 @@ body.sidebar-toggled footer.sticky-footer {
 .sidebar:not(.toggled) .sidebar-logo-mini {
     display: none !important;
 } */
+
+/* Đảm bảo chữ trong ô bảng nằm trên 1 hàng, căn giữa dọc */
+/* ...existing code... */
+.table th, .table td {
+    white-space: nowrap;
+    vertical-align: middle !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem; /* Giảm cỡ chữ cho vừa bảng */
+}
+.table {
+    table-layout: auto;
+    font-size: 0.9rem; /* Giảm cỡ chữ toàn bảng */
+}
